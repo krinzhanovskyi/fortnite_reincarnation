@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fortnite-reincarnation"
+version = "0.1.0"
+description = "Calibrated Windows screen automation with a bounded match state machine"
+requires-python = ">=3.11"
+dependencies = ["Pillow>=12.3,<14"]
+
+[project.scripts]
+reincarnation = "reincarnation.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["reincarnation*"]
